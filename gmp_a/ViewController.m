@@ -4,7 +4,11 @@
 //
 //  Created by Omr on 25/04/14.
 //  Copyright (c) 2014 Omr. All rights reserved.
-//
+
+
+
+
+
 
 #import "ViewController.h"
 #import "GMPInt.h"
@@ -101,6 +105,23 @@ void block_decrypt(mpz_t M, mpz_t C, private_key ku)
 /* NOTE: Assumes mpz_t's are initted in ku and kp */
 void generate_keys(private_key* ku, public_key* kp)
 {
+    
+    /**********************************************************************
+     *                                                                    *
+     * Created by Adam Brockett                                           *
+     *                                                                    *
+     * Copyright (c) 2010                                                 *
+     *                                                                    *
+     * Redistribution and use in source and binary forms, with or without *
+     * modification is allowed.                                           *
+     *                                                                    *
+     * But if you let me know you're using my code, that would be freaking*
+     * sweet.                                                             *
+     *                                                                    *
+     **********************************************************************/
+    
+    
+    
     char buf[BUFFER_SIZE];
     int i;
     mpz_t phi; mpz_init(phi);
