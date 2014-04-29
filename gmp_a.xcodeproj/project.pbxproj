@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CB0C1DCC190EF99100DE6005 /* libgmpxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0C1DCA190EF99100DE6005 /* libgmpxx.a */; };
-		CB0C1DD2190F360200DE6005 /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB0C1DD1190F360200DE6005 /* input.txt */; };
-		CB0C1DD4190F364F00DE6005 /* output.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB0C1DD3190F364F00DE6005 /* output.txt */; };
 		CB597075190B1C9A0087F3E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB597074190B1C9A0087F3E9 /* Foundation.framework */; };
 		CB597077190B1C9A0087F3E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB597076190B1C9A0087F3E9 /* CoreGraphics.framework */; };
 		CB597079190B1C9A0087F3E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB597078190B1C9A0087F3E9 /* UIKit.framework */; };
@@ -26,7 +24,6 @@
 		CB5970A0190B1C9A0087F3E9 /* gmp_aTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB59709F190B1C9A0087F3E9 /* gmp_aTests.m */; };
 		CB5970AA190B1D300087F3E9 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5970A9190B1D300087F3E9 /* libgmp.a */; };
 		CB59715A190B23080087F3E9 /* GMPInt.m in Sources */ = {isa = PBXBuildFile; fileRef = CB597159190B23080087F3E9 /* GMPInt.m */; };
-		CBA069D919101BBA00CB2406 /* rsakg.c in Sources */ = {isa = PBXBuildFile; fileRef = CBA069D819101BBA00CB2406 /* rsakg.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +41,6 @@
 		CB0C1DC8190EF99100DE6005 /* gmpxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmpxx.h; sourceTree = "<group>"; };
 		CB0C1DC9190EF99100DE6005 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
 		CB0C1DCA190EF99100DE6005 /* libgmpxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmpxx.a; sourceTree = "<group>"; };
-		CB0C1DD1190F360200DE6005 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
-		CB0C1DD3190F364F00DE6005 /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
 		CB597071190B1C9A0087F3E9 /* gmp_a.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gmp_a.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB597074190B1C9A0087F3E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CB597076190B1C9A0087F3E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,7 +63,6 @@
 		CB5970A9190B1D300087F3E9 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = ../../../Desktop/libgmp.a; sourceTree = "<group>"; };
 		CB597158190B23080087F3E9 /* GMPInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMPInt.h; sourceTree = "<group>"; };
 		CB597159190B23080087F3E9 /* GMPInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMPInt.m; sourceTree = "<group>"; };
-		CBA069D819101BBA00CB2406 /* rsakg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rsakg.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,9 +146,6 @@
 			children = (
 				CB0C1DC5190EF99100DE6005 /* libs */,
 				CB597158190B23080087F3E9 /* GMPInt.h */,
-				CB0C1DD1190F360200DE6005 /* input.txt */,
-				CB0C1DD3190F364F00DE6005 /* output.txt */,
-				CBA069D819101BBA00CB2406 /* rsakg.c */,
 				CB597159190B23080087F3E9 /* GMPInt.m */,
 				CB597083190B1C9A0087F3E9 /* AppDelegate.h */,
 				CB597084190B1C9A0087F3E9 /* AppDelegate.m */,
@@ -275,8 +266,6 @@
 				CB59708D190B1C9A0087F3E9 /* Images.xcassets in Resources */,
 				CB59707F190B1C9A0087F3E9 /* InfoPlist.strings in Resources */,
 				CB597088190B1C9A0087F3E9 /* Main.storyboard in Resources */,
-				CB0C1DD4190F364F00DE6005 /* output.txt in Resources */,
-				CB0C1DD2190F360200DE6005 /* input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA069D919101BBA00CB2406 /* rsakg.c in Sources */,
 				CB59708B190B1C9A0087F3E9 /* ViewController.m in Sources */,
 				CB597085190B1C9A0087F3E9 /* AppDelegate.m in Sources */,
 				CB59715A190B23080087F3E9 /* GMPInt.m in Sources */,

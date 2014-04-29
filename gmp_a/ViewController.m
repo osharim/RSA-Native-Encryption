@@ -4,20 +4,11 @@
 //
 //  Created by Omr on 25/04/14.
 //  Copyright (c) 2014 Omr. All rights reserved.
-
-
-
-
-
-
 #import "ViewController.h"
 #import "GMPInt.h"
 #include <stdio.h>
-
 #include <sys/time.h>
-
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 #include <sys/time.h>
 #include "gmp.h"
@@ -50,8 +41,6 @@ void print_hex(char* arr, int len)
 
 
 
-#define PUBFILE	"/Users/omr/Desktop/GMP\ Moviles/gmp_a/gmp_a/pubkey.rsa"
-#define SECFILE "/Users/omr/Desktop/GMP\ Moviles/gmp_a/gmp_a/seckey.rsa"
 volatile unsigned int i, counter, value;
 
 static void handler(void);
@@ -119,8 +108,6 @@ void generate_keys(private_key* ku, public_key* kp)
      * sweet.                                                             *
      *                                                                    *
      **********************************************************************/
-    
-    
     
     char buf[BUFFER_SIZE];
     int i;
@@ -217,7 +204,6 @@ void generate_keys(private_key* ku, public_key* kp)
 int rsa_main()
 {
     int i;
-    FILE *fp1, *fp2;
     mpz_t M;  mpz_init(M);
     mpz_t C;  mpz_init(C);
     mpz_t DC;  mpz_init(DC);
@@ -234,18 +220,7 @@ int rsa_main()
     mpz_init(ku.p);
     mpz_init(ku.q);
     
-//    fp2 = fopen(PUBFILE, "w");
-//	if (fp2 == (FILE *) NULL)
-//	{
-//		perror(PUBFILE);
-//		exit(-1);
-//	}
-//    fprintf(fp2, "_________ Private Key ____________");
-//
-//    fprintf(fp2, "n = %s\n", mpz_get_str(NULL, 16, kp.n));
-//    fprintf(fp2, "e = %s\n", mpz_get_str(NULL, 16, kp.e));
-//    fclose(fp2);
-   
+ 
     
     generate_keys(&ku, &kp);
     printf("\n");
